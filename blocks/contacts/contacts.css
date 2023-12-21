@@ -1,0 +1,118 @@
+.contacts {
+  width: 100%;
+  padding: 150px 0;
+  box-sizing: border-box;
+}
+
+.contacts__title {
+  margin-bottom: 24px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.contacts__list {
+  display: flex;
+}
+
+.contacts__phone,
+.contacts__email {
+  width: 50%;
+}
+
+.contacts__phone::before,
+.contacts__email::before {
+  content: "";
+  display: block;
+  margin-bottom: 26px;
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.contacts__phone::before {
+  background-image: url("../../resources/iphone-img.svg");
+}
+
+.contacts__email::before {
+  background-image: url("../../resources/contacts-telegram.svg");
+}
+
+.contacts__phone {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #121212;
+  text-decoration: none;
+}
+
+.contacts__email {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  opacity: 0.5;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #121212;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 1199px) {
+  .contacts {
+    padding: 120px 0;
+  }
+
+  .contacts__phone {
+    font-size: 45px;
+    line-height: 60px;
+  }
+
+  .contacts__email {
+    font-size: 45px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 959px) {
+  .contacts {
+    padding: 80px 0;
+  }
+
+  .contacts__list {
+    flex-direction: column;
+    gap: 58px;
+  }
+
+  .contacts__heading {
+    margin-bottom: 58px;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .contacts__phone,
+  .contacts__email {
+    width: 100%;
+  }
+
+  .contacts__phone {
+    font-size: 35px;
+    line-height: 46px;
+  }
+
+  .contacts__email {
+    font-size: 35px;
+    line-height: 46px;
+    opacity: 1;
+  }
+
+  .contacts__link {
+    border: none;
+  }
+}

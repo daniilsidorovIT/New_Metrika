@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en" class="html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./resources/favicon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <script src="./js/index.js" defer></script>
+    <title>Studio Metrica</title>
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <img
+            class="header__logo"
+            src="./resources/metrica_logo.png"
+            alt="Логотип с названием студии Метрика"
+          />
+          <nav class="header__nav">
+            <a href="#about" class="header__nav-link">О нас</a>
+            <a href="#projects" class="header__nav-link">Проекты</a>
+            <a href="#services" class="header__nav-link">Услуги</a>
+            <a href="#calculator" class="header__nav-link"
+              >Калькулятор стоимости</a
+            >
+            <a href="#contacts" class="header__nav-link">Контакты</a>
+          </nav>
+
+          <div class="header__button">
+            <button class="hamburger">
+              <div class="hamburger__bar"></div>
+            </button>
+          </div>
+
+          <div class="header__nav_mobile">
+            <div class="header__nav-inner">
+              <a href="#" class="header__logo-link">
+                <img
+                  class="header__logo header__logo_mobile"
+                  src="./resources/metrica_logo.png"
+                  alt="Логотип с названием студии Метрика"
+                />
+              </a>
+              <div class="header__mobile-nav-list">
+                <a href="#about" class="header__nav-link_mobile" data-close-link
+                  >О нас</a
+                >
+                <a
+                  href="#projects"
+                  class="header__nav-link_mobile"
+                  data-close-link
+                  >Проекты</a
+                >
+                <a
+                  href="#services"
+                  class="header__nav-link_mobile"
+                  data-close-link
+                  >Услуги</a
+                >
+                <a
+                  href="#calculator"
+                  class="header__nav-link_mobile"
+                  data-close-link
+                  >Калькулятор стоимости</a
+                >
+                <a
+                  href="#contacts"
+                  class="header__nav-link_mobile"
+                  data-close-link
+                  >Контакты</a
+                >
+              </div>
+              <div class="header__mobile-contacts">
+                <p class="header__mobile-title">Для связи:</p>
+                <a href="tel:+79775837518" class="header__phone-number"
+                  >+7 977 583-75-18</a
+                >
+                <a
+                  href="https://t.me/voioXD"
+                  class="header__email"
+                  target="_blank"
+                  >VoioXD</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="description">
+        <div class="container">
+          <div class="description__inner">
+            <h1 class="description__title">
+              Современные и стильные интерьеры для комфортной жизни
+            </h1>
+            <div class="description__img">
+              <p class="description__text">
+                Мы - команда квалифицированных дизайнеров и архитекторов,
+                занимающихся разработкой и реализацией дизайн-проектов
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="about__inner">
+            <h2 class="title">О нас</h2>
+            <p class="about__text">
+              Студия основана в 2011 году. Полностью отдаемся проектированию и
+              реализации интерьеров. К нам обращаются за уютом, индивидуальными
+              решениями и практичностью. Находим конструктивные решения для
+              каждого интерьера, вплоть до каждой детали — нацелены на
+              результат.
+            </p>
+
+            <a class="about__btn" href="#services">Посмотреть услуги</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container">
+          <h2 class="title">Проекты</h2>
+          <ul class="projects__list">
+            <li class="projects__item">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./resources/project1_mobile.jpg"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./resources/project1_tablet.jpg"
+                />
+                <img
+                  src="./resources/project1_desktop.jpg"
+                  alt="Гостиная с панорамными окнами, большим красным диваном и гитарой на стойке"
+                  class="projects__img"
+                />
+              </picture>
+
+              <p class="projects__item-text">
+                ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023
+              </p>
+              <a href="#" class="projects__item-link">Подробнее →</a>
+            </li>
+
+            <li class="projects__item">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./resources/project2_mobile.jpg"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./resources/project2_tablet.jpg"
+                />
+                <img
+                  src="./resources/project2_desktop.jpg"
+                  alt="Деревянный журнальный стол и серый диван с желтыми подушкаи в светлой комнате с яркими обоями с изображением листьев дерева"
+                  class="projects__img"
+                />
+              </picture>
+              <p class="projects__item-text">
+                ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023
+              </p>
+              <a href="#" class="projects__item-link">Подробнее →</a>
+            </li>
+
+            <li class="projects__item">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="./resources/project3_mobile.jpg"
+                />
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="./resources/project3_tablet.jpg"
+                />
+                <img
+                  src="./resources/project3_desktop.jpg"
+                  alt="Большая кухня-гостиная в стиле лофт с большими диваном и обеденным столом, а так же лестницей на второй этаж"
+                  class="projects__img"
+                />
+              </picture>
+              <p class="projects__item-text">
+                ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022
+              </p>
+              <a href="#" class="projects__item-link">Подробнее →</a>
+            </li>
+          </ul>
+          <a class="projects__link" href="#">Смотреть все проекты</a>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="services__inner">
+            <h2 class="title title_white">Услуги</h2>
+            <ul class="services__list">
+              <li class="services__item">
+                <img
+                  src="./resources/services-1.jpg"
+                  alt="measurment_image"
+                  class="services__img"
+                />
+                <h3 class="services__item-text">Планировочное решение</h3>
+                <div class="services__price">
+                  <p class="services__price-item">от 2500₽/м²</p>
+                </div>
+              </li>
+              <li class="services__item">
+                <img
+                  src="./resources/services-2.jpg"
+                  alt="palette"
+                  class="services__img"
+                />
+                <h3 class="services__item-text">Дизайн-проект</h3>
+                <div class="services__price">
+                  <p class="services__price-item">от 3000₽/м²</p>
+                </div>
+              </li>
+              <li class="services__item">
+                <img
+                  src="./resources/services-3.jpg"
+                  alt="contoller"
+                  class="services__img"
+                />
+                <h3 class="services__item-text">Авторский надзор</h3>
+                <div class="services__price">
+                  <p class="services__price-item">от 30 000₽/мес</p>
+                </div>
+              </li>
+              <li class="services__item">
+                <img
+                  src="./resources/services-4.jpg"
+                  alt="warehouse_photo"
+                  class="services__img"
+                />
+                <h3 class="services__item-text">Комплектация</h3>
+                <div class="services__price">
+                  <p class="services__price-item">5% от стоимости</p>
+                </div>
+              </li>
+            </ul>
+            <button class="services__btn" data-popup-target="#popup">
+              Заказать услугу
+            </button>
+
+            <div class="popup" id="popup">
+              <button class="popup__close" data-close-button>&times;</button>
+
+              <h2 class="popup__title">Заказать услугу</h2>
+              <p class="popup__subtitle">
+                Заполните форму, мы свяжемся с вами в течение суток
+              </p>
+
+              <form class="input-form">
+                <input
+                  type="text"
+                  name="name"
+                  class="input"
+                  placeholder="Имя"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="input"
+                  placeholder="Электронная почта"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  class="input"
+                  placeholder="Номер телефона"
+                />
+              </form>
+              <button class="popup__send">Отправить</button>
+            </div>
+            <div id="overlay"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="calculator" id="calculator">
+        <div class="container">
+          <h2 class="title title_calc">Калькулятор стоимости ремонта</h2>
+          <div class="calculator__inner">
+            <div class="calculator__wrapper">
+              <div class="calculator__measurements">
+                <div class="calculator__text">
+                  <p class="calculator__descr">Укажите тип помещения</p>
+                  <p class="calculator__descr">Укажите метраж помещения</p>
+                </div>
+                <div class="calculator__data">
+                  <select class="calculator__type">
+                    <option value="Квартира">Квартира</option>
+                    <option value="Дом">Дом</option>
+                  </select>
+                  <div class="calculator__room-meters">
+                    <form
+                      class="calculator__output"
+                      onsubmit="return false"
+                      oninput="size.value = roomSize.valueAsNumber"
+                    >
+                      <div class="calculator__size-output">
+                        <output for="roomSize" name="size">44</output>
+                        <label for="roomSize">м<sup>2</sup></label>
+                      </div>
+                      <input
+                        type="range"
+                        name="roomSize"
+                        id="roomSize"
+                        min="20"
+                        max="150"
+                        value="44"
+                        step="1"
+                        class="calculator__slider"
+                      />
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calculator__design-composition">
+                <h2 class="calculator__subtitle">Состав дизайн-проекта</h2>
+                <div class="calculator__solutions">
+                  <div class="calculator__text calculator__text_short_gap">
+                    <p class="calculator__descr">Планировочные решения</p>
+                    <p class="calculator__descr">Варианты чертежей</p>
+                    <p class="calculator__descr">Варианты визуализаций</p>
+                  </div>
+                  <div class="calculator__counters">
+                    <div class="counter">
+                      <button class="counter__btn counter__decrement-btn1">
+                        -
+                      </button>
+                      <p class="counter__value counter__value1">0</p>
+                      <button class="counter__btn counter__increment-btn1">
+                        +
+                      </button>
+                    </div>
+                    <div class="counter">
+                      <button class="counter__btn counter__decrement-btn2">
+                        -
+                      </button>
+                      <p class="counter__value counter__value2">0</p>
+                      <button class="counter__btn counter__increment-btn2">
+                        +
+                      </button>
+                    </div>
+                    <div class="counter">
+                      <button class="counter__btn counter__decrement-btn3">
+                        -
+                      </button>
+                      <p class="counter__value counter__value3">0</p>
+                      <button class="counter__btn counter__increment-btn3">
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="calculator__additional-design-items">
+                <h2 class="calculator__subtitle">
+                  Что понадобится в дизайн проекте
+                </h2>
+                <ul class="calculator__project-items">
+                  <li class="calculator__item">
+                    <label class="calculator__item-label" for="option1">
+                      <span class="calculator__item-text">3D визуализация</span>
+                      <input
+                        type="checkbox"
+                        id="option1"
+                        class="calculator__project-checkbox"
+                      />
+                      <span class="fake-checkbox"></span>
+                    </label>
+                  </li>
+
+                  <li class="calculator__item">
+                    <label class="calculator__item-label" for="option2">
+                      <span class="calculator__item-text"
+                        >Чертежи (рабочая документация)</span
+                      >
+                      <input
+                        type="checkbox"
+                        id="option2"
+                        class="calculator__project-checkbox"
+                      />
+                      <span class="fake-checkbox"></span>
+                    </label>
+                  </li>
+                  <li class="calculator__item">
+                    <label class="calculator__item-label" for="option3">
+                      <span class="calculator__item-text"
+                        >Планировочное решение</span
+                      >
+                      <input
+                        type="checkbox"
+                        id="option3"
+                        class="calculator__project-checkbox"
+                      />
+                      <span class="fake-checkbox"></span>
+                    </label>
+                  </li>
+                  <li class="calculator__item">
+                    <label class="calculator__item-label" for="option4">
+                      <span class="calculator__item-text"
+                        >Ведомости (шопинг-лист)</span
+                      >
+                      <input
+                        type="checkbox"
+                        id="option4"
+                        class="calculator__project-checkbox"
+                      />
+                      <span class="fake-checkbox"></span>
+                    </label>
+                  </li>
+                  <li class="calculator__item">
+                    <label class="calculator__item-label" for="option5">
+                      <span class="calculator__item-text"
+                        >Товары со скидкой</span
+                      >
+                      <input
+                        type="checkbox"
+                        id="option5"
+                        class="calculator__project-checkbox"
+                      />
+                      <span class="fake-checkbox"></span>
+                    </label>
+                  </li>
+                  <li class="calculator__item">
+                    <label class="calculator__item-label" for="option6">
+                      <span class="calculator__item-text">Смета на ремонт</span>
+                      <input
+                        type="checkbox"
+                        id="option6"
+                        class="calculator__project-checkbox"
+                      />
+                      <span class="fake-checkbox"></span>
+                    </label>
+                  </li>
+                  <li class="calculator__item">
+                    <label class="calculator__item-label" for="option7">
+                      <span class="calculator__item-text">Мебель на заказ</span>
+                      <input
+                        type="checkbox"
+                        id="option7"
+                        class="calculator__project-checkbox"
+                      />
+                      <span class="fake-checkbox"></span>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="calculator__services">
+                <h2 class="calculator__services-title">
+                  Дополнительные услуги
+                </h2>
+                <p class="calculator__services-subtitle">
+                  Оплачиваются отдельно и не входят в состав проекта
+                </p>
+
+                <ul class="calculator__services-list">
+                  <li class="calculator__services-item">
+                    <label class="calculator__services-label">
+                      <input
+                        type="checkbox"
+                        name="smart-home"
+                        id="smart-home"
+                        class="calculator__services-checkbox"
+                        value="30000"
+                      />
+                      <span class="fake-checkbox_services"></span>
+                      <span class="calculator__services-text">Умный дом</span>
+                    </label>
+                    <p class="calculator__services-cost">30 000 ₽</p>
+                  </li>
+
+                  <li class="calculator__services-item">
+                    <label class="calculator__services-label">
+                      <input
+                        type="checkbox"
+                        name="technical-supervision"
+                        id="technical-supervision"
+                        class="calculator__services-checkbox"
+                        value="20000"
+                      />
+                      <span class="fake-checkbox_services"></span>
+                      <span class="calculator__services-text"
+                        >Технический надзор</span
+                      >
+                    </label>
+                    <p class="calculator__services-cost">20 000 ₽</p>
+                  </li>
+
+                  <li class="calculator__services-item">
+                    <label class="calculator__services-label">
+                      <input
+                        type="checkbox"
+                        name="author-super"
+                        id="author-supervision"
+                        class="calculator__services-checkbox"
+                        value="25000"
+                      />
+                      <span class="fake-checkbox_services"></span>
+                      <span class="calculator__services-text"
+                        >Авторский надзор</span
+                      >
+                    </label>
+                    <p class="calculator__services-cost">25 000 ₽</p>
+                  </li>
+
+                  <li class="calculator__services-item">
+                    <label class="calculator__services-label">
+                      <input
+                        type="checkbox"
+                        name="3d-tour"
+                        id="3d-tour"
+                        class="calculator__services-checkbox"
+                        value="4000"
+                      />
+                      <span class="fake-checkbox_services"></span>
+                      <span class="calculator__services-text"
+                        >3D тур по визуализациям проекта</span
+                      >
+                    </label>
+                    <p class="calculator__services-cost">4 000 ₽</p>
+                  </li>
+
+                  <li class="calculator__services-item">
+                    <label class="calculator__services-label">
+                      <input
+                        type="checkbox"
+                        name="design-project"
+                        id="design-project"
+                        class="calculator__services-checkbox"
+                        value="20000"
+                      />
+                      <span class="fake-checkbox_services"></span>
+                      <span class="calculator__services-text"
+                        >Дизайн-проект дополнительного помещения</span
+                      >
+                    </label>
+                    <p class="calculator__services-cost">20 000 ₽</p>
+                  </li>
+
+                  <li class="calculator__services-item">
+                    <label class="calculator__services-label">
+                      <input
+                        type="checkbox"
+                        name="loggia-project"
+                        id="loggia-project"
+                        class="calculator__services-checkbox"
+                        value="10000"
+                      />
+                      <span class="fake-checkbox_services"></span>
+                      <span class="calculator__services-text"
+                        >Дизайн-проект лоджии</span
+                      >
+                    </label>
+                    <p class="calculator__services-cost">10 000 ₽</p>
+                  </li>
+
+                  <li class="calculator__services-item">
+                    <label class="calculator__services-label">
+                      <input
+                        type="checkbox"
+                        name=""
+                        id="wardrobe-project"
+                        class="calculator__services-checkbox"
+                        value="10000"
+                      />
+                      <span class="fake-checkbox_services"></span>
+                      <span class="calculator__services-text"
+                        >Дизайн-проект гардеробной комнаты</span
+                      >
+                    </label>
+                    <p class="calculator__services-cost">10 000 ₽</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="calculator__summary">
+              <p class="calculator__title">Стоимость проекта</p>
+              <div class="calculator__sum">
+                <span class="js-total">44 000</span> ₽
+              </div>
+              <div class="calculator__cost">
+                <span class="js-cost"></span> ₽/м2
+              </div>
+              <div class="calculator__terms">35-45 дней</div>
+              <button class="calculator__reserve-btn" type="submit">
+                Заказать проект
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <div class="container">
+          <div class="reviews__inner">
+            <h2 class="title">Отзывы</h2>
+
+            <ul class="reviews__list">
+              <li class="reviews__item">
+                <h3 class="reviews__subtitle">Ксения, проект 65 кв.м.</h3>
+                <p class="reviews__description">
+                  Хочу искренне поблагодарить Вас за работу, проделанную на
+                  высоком уровне! Нам с мужем было очень приятно с Вами
+                  работать! Спасибо за Ваше умение правильно слышать пожелания
+                  своих клиентов и выполнять работу, которая превосходит все
+                  ожидания! Мы даже не надеялись, что на 34 кв.м. кто-то сможет
+                  нам грамотно разместить все, что мы хотим и даже больше!<br /><br />
+
+                  Вам удалось это просто превосходно! Нам лишь осталось
+                  воплотить красоту, которую Вы нам создали в жизнь и поделиться
+                  с Вами результатом!
+                </p>
+              </li>
+              <li class="reviews__item">
+                <h3 class="reviews__subtitle">Регина, проект 89 кв.м.</h3>
+                <p class="reviews__description">
+                  Спасибо большое за такой классный проект! Все стильно, круто,
+                  продумано! Очень приятно было с вами работать! Спасибо, что
+                  терпели наши «хочу это, хочу то» в поисках идеального для нас
+                  ремонта. Здорово, что мы нашли такого основательного,
+                  ответственного и внимательного к деталям дизайнера!<br /><br />
+
+                  Хочется скорее реализовать проект и наслаждаться современной,
+                  функциональной и красивой квартирой! Будем рекомендовать Вас
+                  всем друзьям и знакомым!
+                </p>
+              </li>
+              <li class="reviews__item">
+                <h3 class="reviews__subtitle">Яна, проект 120 кв.м.</h3>
+                <p class="reviews__description">
+                  Хотелось бы сказать большое спасибо за проделанную работу! В
+                  задачу Марины входила разработка дизайн-проекта в минимальные
+                  сроки, и мне, конечно, не хотелось при этом потерять качество
+                  выполнения работы. Но волнения были напрасны: все вопросы
+                  решались оперативно, всегда предлагалось несколько вариантов
+                  решения, а также предоставлялись комментарии, какой способ
+                  решения будет более подходящим.<br /><br />
+
+                  В итоге проект был сдан в оговоренный срок, и мне просто не
+                  терпится приступить к его реализации! Проект получился очень
+                  стильным и современным! Буду рекомендовать Вас тем, кому еще
+                  предстоит это непростое дело - ремонт!
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="carousel" data-carousel>
+          <div class="container">
+            <h2 class="gallery__title">галерея проектов</h2>
+            <div class="gallery__controls">
+              <button class="carousel-button prev" data-carousel-button="prev">
+                <img src="./resources/prev.svg" />
+              </button>
+              <button class="carousel-button next" data-carousel-button="next">
+                <img src="./resources/prev.svg" />
+              </button>
+            </div>
+          </div>
+
+          <ul class="gallery__slider-wrapper" data-slides>
+            <li class="gallery__slide" data-active>
+              <img
+                src="./resources/project_example_bg.jpg"
+                alt=""
+                class="gallery__img"
+              />
+              <div class="container">
+                <p class="gallery__description">
+                  Проект Двухкомнатной<br />
+                  квартиры в ЖК Лесной Пейзаж
+                </p>
+              </div>
+            </li>
+            <li class="gallery__slide">
+              <img src="./resources/gallery2.jpg" alt="" class="gallery__img" />
+              <div class="container">
+                <p class="gallery__description">Проект гостиной в ЖК Маяк</p>
+              </div>
+            </li>
+            <li class="gallery__slide">
+              <img src="./resources/gallery3.jpg" alt="" class="gallery__img" />
+              <div class="container">
+                <p class="gallery__description">
+                  Визуализация кухни-гостиной<br />
+                  в частном доме
+                </p>
+              </div>
+            </li>
+            <li class="gallery__slide">
+              <img src="./resources/gallery4.jpg" alt="" class="gallery__img" />
+              <div class="container">
+                <p class="gallery__description">
+                  Проект кухни в скандинавском<br />
+                  стиле для ЖК Северный Ветер
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title">Контакты</h2>
+
+          <div class="contacts__list">
+            <a href="tel:+79975633233" class="contacts__phone"
+              >+7 997 563-32-33</a
+            >
+            <div class="contacts__email">
+              <a
+                href="https://t.me/voioXD"
+                class="contacts__link"
+                target="_blank"
+                >VoioXD</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav class="footer__links">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#about" class="footer__link">О нас</a>
+          </li>
+          <li class="footer__item">
+            <a href="#projects" class="footer__link">Проекты</a>
+          </li>
+          <li class="footer__item">
+            <a href="#services" class="footer__link">Услуги</a>
+          </li>
+          <li class="footer__item">
+            <a href="#calculator" class="footer__link">Калькулятор стоимости</a>
+          </li>
+          <li class="footer__item">
+            <a href="#contacts" class="footer__link">Контакты</a>
+          </li>
+        </ul>
+        <p class="footer__text">студия дизайна интерьера Метрика — 2023</p>
+      </nav>
+    </footer>
+
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/calculator.js"></script>
+  </body>
+</html>

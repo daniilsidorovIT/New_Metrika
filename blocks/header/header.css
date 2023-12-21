@@ -1,0 +1,147 @@
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  margin: 33px auto 70px;
+}
+
+.header__logo {
+  height: 21px;
+  width: 127px;
+  border: 0;
+}
+
+.header__nav {
+  display: flex;
+  gap: 60px;
+}
+
+.header__nav-link {
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #121212;
+  text-decoration: none;
+}
+
+.header__nav-link:hover {
+  border-bottom: 1px solid #121212;
+  opacity: 0.5;
+}
+
+@media (max-width: 1199px) {
+  .header__inner {
+    margin-bottom: 73.76px;
+    max-width: 100%;
+  }
+
+  .header__nav {
+    display: none;
+  }
+  .header__nav_mobile {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    opacity: 0;
+    z-index: -10;
+    transition: all 0.5s ease-in-out;
+    pointer-events: all;
+  }
+
+  .header__nav_mobile.is-active {
+    opacity: 1;
+    pointer-events: all;
+    z-index: 90;
+  }
+
+  .header__nav-inner {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    max-width: 274px;
+    height: 100vh;
+    padding-top: 80px;
+    padding-bottom: 65px;
+    padding-left: 30px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    transition: all 0.5s ease;
+
+    overflow-y: auto;
+  }
+
+  .header__nav-inner.is-active {
+    right: 0;
+  }
+
+  .header__mobile-nav-list {
+    margin-bottom: 90px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .header__nav-link_mobile {
+    margin: 0;
+    text-align: left;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #121212;
+    text-decoration: none;
+  }
+
+  .header__mobile-contacts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+  }
+
+  .header__mobile-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    opacity: 0.5;
+    text-transform: uppercase;
+  }
+
+  .header__phone-number,
+  .header__email {
+    font-weight: 400;
+    font-size: 20px;
+    color: #121212;
+    text-decoration: none;
+  }
+  .header__logo_mobile {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__inner {
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header__button {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+  .header__nav_mobile {
+    display: none;
+  }
+}

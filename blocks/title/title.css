@@ -1,0 +1,30 @@
+.title {
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: uppercase;
+  color: #121212;
+}
+
+.title_white {
+  color: #fff;
+}
+
+.title_calc {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 61px;
+  color: #121212;
+  text-transform: unset;
+}
+
+@media (max-width: 767px) {
+  .title {
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
